@@ -35,8 +35,8 @@ $ source /ad/eng/courses/ec/ec535/bashrc_ec535
 $ make
 // Load .ko file on to Gumstix by using CTRL-A, S in minicom to choose zmodem
 // Once loaded, insert module using the following commands
-# mknod /dev/motor c 61 0
-# insmod motor.ko
+`# mknod /dev/motor c 61 0`
+`# insmod motor.ko`
 
 ----------------------------------------------------------------------------------------------------------------------------
 Bluetooth (/source/Bluetooth)
@@ -59,9 +59,9 @@ $ ./sendInstr
 Webcam UVC Driver + User-level Application to Capture Images (/source/Webcam)
 // Load 5 kernel modules in /source/webcam/driver onto gumstix
 // v4l2 api setup on a 32-bit environment
-`# insmod compat_ioctl32.ko
-# insmod v4l1-compat.ko
-# insmod v4l2-common.ko`
+`# insmod compat_ioctl32.ko`
+`# insmod v4l1-compat.ko`
+`# insmod v4l2-common.ko`
 
 // webcam device setup, depends on previous kernel modules
 `# insmod videodev.ko `
@@ -97,7 +97,7 @@ $ gcc v4l2grab.c yuv.c -o v4l2grab
 $ ./v4l2grab image.jpg
 
 Some helper commands
-`# lsusb
-# cat /dev/video*
-# ls -ltrh /dev/video*
-# dmesg | less`
+`# lsusb`
+`# cat /dev/video*`
+`# ls -ltrh /dev/video*`
+`# dmesg | less`

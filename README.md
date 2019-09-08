@@ -9,6 +9,8 @@ This project is to design a real time security surveillance system using object 
 Read for project report for more detailed information.
 Below are explanations on how to run the software end of all the modules in this project.
   
+  [![EC535 Final Project Demo](http://img.youtube.com/vi/cbXSJNo9iWw/0.jpg)](http://www.youtube.com/watch?v=cbXSJNo9iWw "EC535 Final Project Demo")  
+  
 Syntax  
 `# - command line in target gumstix kernel(minicom emulation terminal)`    
 $ - command line in host computer terminals         

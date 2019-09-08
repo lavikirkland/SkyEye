@@ -10,18 +10,18 @@ Read for project report for more detailed information.
 Below are explanations on how to run the software end of all the modules in this project.
 
 Syntax
-`# - command line in target gumstix kernel(minicom emulation terminal)       
-$ - command line in host computer terminals       
-// or /* */- comments
-M: - message displayed (if needed)`
+`# - command line in target gumstix kernel(minicom emulation terminal)`    
+$ - command line in host computer terminals         
+// or /* */- comments  
+M: - message displayed (if needed)  
 
 ----------------------------------------------------------------------------------------------------------------------------
 ##### Object Detection (/source/ObjectDetection)
-/* Tensorflow MobileNet + SSD(Single Shot MultiBox Detector) model pre-trained with COCO dataset is used
-Python3, pip and opencv should be installed before running the program
-Modify video device number in ODC.py if needed
-Modify class_id to detect different objects, default is class_id = 1 for detecting human */
-$ python3 odc.py
+/* Tensorflow MobileNet + SSD(Single Shot MultiBox Detector) model pre-trained with COCO dataset is used  
+Python3, pip and opencv should be installed before running the program  
+Modify video device number in ODC.py if needed  
+Modify class_id to detect different objects, default is class_id = 1 for detecting human */  
+$ python3 odc.py  
 
 ----------------------------------------------------------------------------------------------------------------------------
 ##### Motor and Trigger Control (/source/Motor)

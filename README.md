@@ -10,13 +10,13 @@ Read for project report for more detailed information.
 Below are explanations on how to run the software end of all the modules in this project.
 
 Syntax
-`# - command line in target gumstix kernel(minicom emulation terminal)
-$ - command line in host computer terminals
+`# - command line in target gumstix kernel(minicom emulation terminal)       
+$ - command line in host computer terminals       
 // or /* */- comments
 M: - message displayed (if needed)`
 
 ----------------------------------------------------------------------------------------------------------------------------
-Object Detection (/source/ObjectDetection)
+##### Object Detection (/source/ObjectDetection)
 /* Tensorflow MobileNet + SSD(Single Shot MultiBox Detector) model pre-trained with COCO dataset is used
 Python3, pip and opencv should be installed before running the program
 Modify video device number in ODC.py if needed
@@ -24,7 +24,7 @@ Modify class_id to detect different objects, default is class_id = 1 for detecti
 $ python3 odc.py
 
 ----------------------------------------------------------------------------------------------------------------------------
-Motor and Trigger Control (/source/Motor)
+##### Motor and Trigger Control (/source/Motor)
 // Motors and trigger are controlled by the GPIO outputs of the gumstix
 // Open minicom 
 $ minicom
@@ -39,7 +39,7 @@ $ make
 `# insmod motor.ko`
 
 ----------------------------------------------------------------------------------------------------------------------------
-Bluetooth (/source/Bluetooth)
+##### Bluetooth (/source/Bluetooth)
 // If you are using Ubuntu, install libbluetooth-dev using following commands
 $ sudo apt-get install libbluetooth-dev
 // Source into host containing kernel if kernel is not installed in local environment
@@ -56,7 +56,7 @@ $ minicom
 $ ./sendInstr
 
 ----------------------------------------------------------------------------------------------------------------------------
-Webcam UVC Driver + User-level Application to Capture Images (/source/Webcam)
+##### Webcam UVC Driver + User-level Application to Capture Images (/source/Webcam)
 // Load 5 kernel modules in /source/webcam/driver onto gumstix
 // v4l2 api setup on a 32-bit environment
 `# insmod compat_ioctl32.ko`
